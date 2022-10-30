@@ -32,18 +32,37 @@
 // }
  
 //VD3 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n, i = 0;
+//     cin >> n;
+
+//     while (n >= 1) {
+//             n = n/10;
+//             i++;
+//         }
+//     cout << i;
+//     return 0;
+//     }    
+
+//VD4
+#include <iostream> 
 using namespace std;
 
 int main() {
-    int n, i = 0;
+    int n, count = 0;
     cin >> n;
-
-    while (n >= 1) {
-            n = n/10;
-            i++;
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) count++;
+        if (count > 2) {
+            cout << "Khong la so nguyen to";
+            break;
+        } 
+    }
+    if (count == 2) {
+        cout << "La so nguyen to";
         }
-    cout << i;
     return 0;
-    }    
-
+    }
