@@ -392,21 +392,25 @@ int main () {
     return 0;
 }
 */
-//Quang
 #include <iostream> 
 #include <math.h>
 using namespace std;
+int songuyento(int x) {
+    for (int i=2 ; i <= sqrt(x) ; i++) {
+        if (x%i == 0)
+            return 0;
+    }
+    return 1;
+}
 int main () {
-    for (int i = 1; i < 50 ; i++) {
-        if(i == 3 || i == 39 || i == 51)
-            continue;
-        if (i % 2 != 0)
+    int n;
+    cin >> n;
+    for (int i=2 ; i < n; i++) {
+        if (songuyento(i) == 1)
             cout << i << " ";
     }
     return 0;
 }
-
-//Man
 
 
 
