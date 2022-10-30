@@ -12,6 +12,8 @@ dương n
 
 
 1. Viết chương trình nhập vào số nguyên dương n. Tính tổng:
+![image](https://user-images.githubusercontent.com/117023057/198884739-3d6ee97c-eb85-4f40-95a5-cb5fb23ec8d2.png)
+
 2. Viết chương trình nhập vào số nguyên dương n. Tính tổng: S= 1 +
 1.2 + . . . . + 1.2.3….n
 3. Viết chương trình liệt kê tất cả các số nguyên tố nhỏ hơn giá trị N
