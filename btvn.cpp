@@ -397,19 +397,11 @@ int main () {
 #include <math.h>
 using namespace std;
 int main () {
-    int n;
-    cin >> n;
-    if  (n == 1)
-        cout << "Khong phai so nguyen to";
-    else if (n == 2 || n == 3) {
-        cout << "La so nguyen to";
-    }
-    else {
-        for (int i = 2; i <= sqrt(n) ; i++) {
-            if (n % i != 0) 
-                {cout << "La so nguyen to";
-                break;}
-        }
+    for (int i = 1; i < 50 ; i++) {
+        if(i == 3 || i == 39 || i == 51)
+            continue;
+        if (i % 2 != 0)
+            cout << i << " ";
     }
     return 0;
 }
