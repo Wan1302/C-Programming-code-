@@ -73,18 +73,33 @@
 /*Ví dụ 5: Viết chương trình In tất cả các số lẻ nhỏ hơn 50 trừ các số
 3,9,31 (có dùng continue)*/
 
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     for ( int i = 1; i <= 50; i++) {
+//         if (i % 2 == 1) {
+//             if (i == 3 || i == 9 || i ==31) {
+//                 continue;
+//             } 
+//             cout << i << " ";
+//         }
+//     }
+//     return 0;
+// }
+//Viết chương trình nhập vào số nguyên dương n. Tính tổng:S = 1/2 + 1/4 + ... 1/(2n)
 #include <iostream>
 using namespace std;
 
 int main() {
-    for ( int i = 1; i <= 50; i++) {
-        if (i % 2 == 1) {
-            if (i == 3 || i == 9 || i ==31) {
-                continue;
-            } 
-            cout << i << " ";
-        }
+    int n;
+    double S = 0 ;
+    cout << "Nhap n de tinh S = 1/2 + 1/4 + ... 1/(2n) , n =  " ;
+    cin >> n;
+    for (double i = 1; i <= n; i = i + 1) {
+        S = S + 1/(2*i);
     }
+    cout << "Tong S = " << S;
     return 0;
 }
 
