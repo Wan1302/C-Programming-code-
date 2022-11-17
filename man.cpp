@@ -161,29 +161,90 @@
 // }
 
 //5. Tìm ước số chung lớn nhất của 2 số nguyên dương a và b
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int a,b;
-    cin >> a >> b;
-    if (a > b) {
-        for (int i = a; i >= 1; i--) {
-            if ((a % i==0) && (b % i==0)) {
-                cout << "UCLN la: " << i;
-                break;
-            }
-        }
-    }
-    else {
-        for (int i = b; i >= 1; i--) {
-            if ((a % i==0) && (b % i==0)) {
-                cout << "UCLN la: " << i;
-                break;
-    }
-}
+// int main() {
+//     int a,b;
+//     cin >> a >> b;
+//     if (a > b) {
+//         for (int i = a; i >= 1; i--) {
+//             if ((a % i==0) && (b % i==0)) {
+//                 cout << "UCLN la: " << i;
+//                 break;
+//             }
+//         }
+//     }
+//     else {
+//         for (int i = b; i >= 1; i--) {
+//             if ((a % i==0) && (b % i==0)) {
+//                 cout << "UCLN la: " << i;
+//                 break;
+//     }
+// }
 
-    }
-    return 0;
-}
+//     }
+//     return 0;
+// }
 
+// #include <iostream>
+// #include <math.h>
+// #include <iomanip>
+// using namespace std;
+
+
+// int main(){
+//     double a,b,c,d;
+//     cin >> a >> b >> c;
+//     d = b*b - 4*a*c;
+//     if (a == 0) {
+//         if (b == 0) {
+//             if (c == 0) cout << "Counless solutions";
+//             else cout << "No solution";
+//         }
+//         else  cout << fixed << setprecision(4) << -c/b;
+//     }
+//     else {
+//         if (d >= 0) {
+//             if (d > 0) {
+//                 cout << fixed << setprecision(4) << (-b + sqrt(d))/(2*a) << endl;
+//                 cout << fixed << setprecision(4) << (-b - sqrt(d))/(2*a) ;
+//             }
+//             else cout <<  fixed << setprecision(4) << (-b)/(2*a) ;
+//         }
+//         else {
+//             cout << fixed << setprecision(4) << (-b)/(2*a) << sqrt(-d)/(2*a) << "*i" << endl;
+//             cout << fixed << setprecision(4) << (-b)/(2*a) << -sqrt(-d)/(2*a) << "*i";
+//         }
+        
+//     }
+    
+    
+// }
+
+// //CHUYEN CHUOI NHI PHAN SANG SO HE THAP PHAN
+// #include <iostream>
+// using namespace std;
+// int convertBinaryToDecimal(string n)
+// {
+//    string one = "1";
+//    int a = 0, b = 1;
+//    for (int i = 0; i < n.length() ; i++) {
+//       string m(n,i,1);
+//       if (m.compare(one) == 0) {
+//          for (int j = 1; j <= n.length()-i-1; j++) {
+//             b = b*2;
+//          }
+//          a = a + b;
+//          b = 1;
+//       }
+//    }
+//    return a;
+// }
+// int main()
+// {
+//     string n;
+//     cin >> n;
+//     cout << n << " in binary = " << convertBinaryToDecimal(n) << " in decimal";
+//     return 0;
+// }
