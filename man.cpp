@@ -248,3 +248,13 @@
 //     cout << n << " in binary = " << convertBinaryToDecimal(n) << " in decimal";
 //     return 0;
 // }
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int main() {
+   char str[5] = "ABC";
+   cout << str[3];
+   return 0;
+}
